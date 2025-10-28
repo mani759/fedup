@@ -6,7 +6,7 @@
   --white: #ffffff;
   --card: #f7f7f8;
   --glass: rgba(255, 255, 255, 0.06);
-  --max-width: 1200px;
+  --max-width: 1400px;
   --radius: 18px;
   --shadow: 0 12px 40px rgba(2, 10, 10, 0.5);
   font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -158,7 +158,7 @@ body {
 }
 
 .hero {
-  padding: 60px 0 40px 0;
+  padding: 30px 0 40px 0;
 }
 
 .hero-inner {
@@ -169,7 +169,7 @@ body {
 }
 
 .hero-left {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .hero-title {
@@ -248,19 +248,21 @@ body {
 
 .hero-right-mobile {
   display: none;
+  width: 100%;
 }
 
 .portrait-card-mobile {
   position: relative;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
   border-radius: 28px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .portrait-mobile {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
   border-radius: 28px;
   display: block;
@@ -358,8 +360,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .service-card {
@@ -421,9 +422,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-top: 30px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .compare-card {
@@ -593,9 +592,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 30px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .team-card {
@@ -643,7 +640,7 @@ body {
 }
 
 .accordion {
-  max-width: 800px;
+  max-width: 100%;
   margin: 30px auto 0;
 }
 
@@ -831,11 +828,11 @@ body {
   }
 
   .hero-right {
-    display: none;
+    display: none !important;
   }
 
   .hero-right-mobile {
-    display: block;
+    display: block !important;
   }
 
   .hero-title {
@@ -939,11 +936,15 @@ body {
   }
 
   .hero {
-    padding: 40px 0 30px 0;
+    padding: 20px 0 30px 0;
   }
 
   .hero-left {
-    padding: 20px 0;
+    padding: 15px 0;
+  }
+
+  .hero-inner {
+    gap: 20px;
   }
 
   .hero-title {
@@ -969,15 +970,16 @@ body {
   }
 
   .hero-right {
-    display: none;
+    display: none !important;
   }
 
   .hero-right-mobile {
-    display: block;
+    display: block !important;
+    width: 100%;
   }
 
   .portrait-mobile {
-    height: 280px;
+    height: 300px;
   }
 
   .white-section {
@@ -1175,7 +1177,11 @@ body {
   }
 
   .hero {
-    padding: 30px 0 20px 0;
+    padding: 20px 0 20px 0;
+  }
+
+  .hero-left {
+    padding: 10px 0;
   }
 
   .hero-title {
@@ -1216,7 +1222,7 @@ body {
   }
 
   .portrait-mobile {
-    height: 220px;
+    height: 240px;
   }
 
   .white-section {
